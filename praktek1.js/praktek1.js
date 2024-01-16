@@ -1,0 +1,10 @@
+let negara = 'Suriname'; 
+let benua = 'Amerika Selatan';
+let populasi = '612.985';
+const kepulauan = false; 
+const bahasa = 'Belanda'; 
+console.log(negara);
+console.log(benua);
+console.log(populasi);
+console.log(kepulauan);
+console.log(bahasa);

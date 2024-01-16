@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan IMT</title>
+</head>
+<body>
+    <script>
+        // 1. Simpan berat dan tinggi Madan dan Joan pada sebuah variabel
+        var beratMadan = 70; // gantilah dengan berat sebenarnya
+        var tinggiMadan = 1.75; // gantilah dengan tinggi sebenarnya
+    
+        var beratJoan = 65; // gantilah dengan berat sebenarnya
+        var tinggiJoan = 1.70; // gantilah dengan tinggi sebenarnya
+    
+        // 2. Hitung kedua IMT menggunakan rumus yang disediakan
+        var imtMadan = beratMadan / Math.pow(tinggiMadan, 2);
+        var imtJoan = beratJoan / Math.pow(tinggiJoan, 2);
+    
+        // 3. Buat variabel dengan nama madanHigherIMT, berisikan nilai hasil perbandingan apakah IMT Madan lebih tinggi dari Joan
+        var madanHigherIMT = imtMadan > imtJoan;
+    
+        // 4. Tampilkan data pada console
+        console.log('Berat Madan:', beratMadan, 'kg');
+        console.log('Tinggi Madan:', tinggiMadan, 'm');
+        console.log('IMT Madan:', imtMadan.toFixed(2));
+    
+        console.log('Berat Joan:', beratJoan, 'kg');
+        console.log('Tinggi Joan:', tinggiJoan, 'm');
+        console.log('IMT Joan:', imtJoan.toFixed(2));
+    
+        console.log('Madan memiliki IMT lebih tinggi dari Joan:', madanHigherIMT);
+    </script>
+    
+    <!-- Tampilkan data dalam tabel HTML -->
+    <table>
+        <tr>
+            <th>Orang</th>
+            <th>Berat (kg)</th>
+            <th>Tinggi (m)</th>
+            <th>IMT</th>
+        </tr>
+        <tr>
+            <td>Madan</td>
+            <td id="beratMadan"></td>
+            <td id="tinggiMadan"></td>
+            <td id="imtMadan"></td>
+        </tr>
+        <tr>
+            <td>Joan</td>
+            <td id="beratJoan"></td>
+            <td id="tinggiJoan"></td>
+            <td id="imtJoan"></td>
+        </tr>
+    </table>
+    
+    <script>
+        // Tampilkan data dalam tabel HTML
+        document.getElementById('beratMadan').innerText = beratMadan;
+        document.getElementById('tinggiMadan').innerText = tinggiMadan;
+        document.getElementById('imtMadan').innerText = imtMadan.toFixed(2);
+    
+        document.getElementById('beratJoan').innerText = beratJoan;
+        document.getElementById('tinggiJoan').innerText = tinggiJoan;
+        document.getElementById('imtJoan').innerText = imtJoan.toFixed(2);
+    </script>
+    
+    </body>
+    </html>
+</body>
+</html>
